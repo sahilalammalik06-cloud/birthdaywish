@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#221b28" />
+      <stop offset="60%" stop-color="#14111a" />
+      <stop offset="100%" stop-color="#08070d" />
+    </radialGradient>
+    <linearGradient id="roseGold4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#e879f9" />
+      <stop offset="100%" stop-color="#fbcfe8" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg4)" />
+  <rect x="30" y="30" width="740" height="940" rx="20" fill="none" stroke="rgba(232, 121, 249, 0.25)" stroke-width="2" stroke-dasharray="10 10" />
+  
+  <g transform="translate(400, 420)" text-anchor="middle">
+    <circle cx="0" cy="-60" r="80" fill="none" stroke="url(#roseGold4)" stroke-width="4" opacity="0.8" />
+    <path d="M-90,110 C-80,0 80,0 90,110" fill="none" stroke="url(#roseGold4)" stroke-width="4" opacity="0.8" />
+    <circle cx="0" cy="-60" r="56" fill="rgba(232, 121, 249, 0.15)" />
+    <text y="-50" font-family="system-ui, sans-serif" font-size="38" font-weight="bold" fill="#ffffff">#4</text>
+  </g>
+  
+  <text x="400" y="630" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#f5d0fe" text-anchor="middle" letter-spacing="2">
+    SWASTIKA'S PHOTO 4
+  </text>
+  <text x="400" y="675" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#f472b6" text-anchor="middle">
+    More Personal · Ordinary Moments Nicer 🤍
+  </text>
+  <text x="400" y="730" font-family="system-ui, sans-serif" font-size="16" fill="#a1a1aa" text-anchor="middle">
+    Replace public/assets/photo4.jpg or tap "Photos" in website header
+  </text>
+</svg>

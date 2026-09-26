@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-handwriting: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+/* Glassmorphism styling */
+.glass-panel {
+  background: rgba(22, 22, 29, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(244, 114, 182, 0.12), transparent 70%), rgba(20, 20, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.2);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(251, 191, 36, 0.25);
+}
+
+.pink-glow {
+  box-shadow: 0 0 40px -5px rgba(244, 114, 182, 0.3);
+}
+
+/* Subtle Polaroid tape styling */
+.polaroid-frame {
+  background: #ffffff;
+  color: #1c1917;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(244, 114, 182, 0.15);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-4px) rotate(0deg) scale(1.01);
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.8), 0 0 30px rgba(244, 114, 182, 0.25);
+}
+
+/* Subtle float animation */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+/* Candle flame flicker animation */
+@keyframes flame-flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #ef4444);
+  }
+  25% {
+    transform: scale(1.08, 0.96) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px #fbbf24) drop-shadow(0 0 20px #f97316);
+  }
+  50% {
+    transform: scale(0.96, 1.05) rotate(-2deg);
+    opacity: 0.88;
+    filter: drop-shadow(0 0 7px #f59e0b) drop-shadow(0 0 14px #ef4444);
+  }
+  75% {
+    transform: scale(1.03, 1.02) rotate(1deg);
+    opacity: 0.98;
+    filter: drop-shadow(0 0 10px #fbbf24) drop-shadow(0 0 18px #f97316);
+  }
+}
+
+.animate-flame {
+  animation: flame-flicker 1.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}

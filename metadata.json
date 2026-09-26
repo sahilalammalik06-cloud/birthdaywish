@@ -1,0 +1,7 @@
+{
+  "name": "Happy Birthday Swastika ✨",
+  "description": "A personal, warm, and cinematic birthday surprise crafted for Swastika.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
